@@ -1,4 +1,4 @@
-import Rectangle from './rectangle';
+import Rectangle from './Rectangle';
 
 export default class Mine {
   constructor({ x, y }) {

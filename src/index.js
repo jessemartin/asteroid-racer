@@ -1,9 +1,7 @@
-'use strict';
-
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import App from './components/app.jsx';
+import App from './components/App.jsx';
 import configureStore from './store/configureStore';
 
 const store = configureStore();
