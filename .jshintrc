@@ -9,9 +9,9 @@
   // Documentation: http://www.jshint.com/docs/options/
   "browser": true,
   "globals": {},
-  "strict": "global",
   "undef": true,
   "unused": true,
   "laxcomma": true,
+  "strict": "implied",
   "esversion": 6
 }
