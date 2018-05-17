@@ -1,5 +1,8 @@
 #Astroid Racer
 
+![astroid racer](astroid_racer.png)
+
+
 `npm install`
 
 `npm start`
