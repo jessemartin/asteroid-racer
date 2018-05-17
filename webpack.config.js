@@ -1,31 +1,44 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const html = new HtmlWebpackPlugin({
-  title: 'App'
+  title: 'App',
 });
-
-const js = {
-  test: /\.js[x]?$/,
-  loader: 'babel-loader',
-  query: {
-    plugins: ['transform-object-rest-spread'],
-    presets: ['es2015', 'react']
-  }
-};
-
-const css = {
-  test: /\.css$/,
-  loader: 'style-loader!css-loader'
-};
 
 module.exports = {
   cache: true,
-  entry: './src/index.js',
+  entry: './src/index.tsx',
   output: {
-    filename: 'dist/bundle.js'
+    filename: 'bundle.js',
+    path: __dirname + '/dist',
   },
   devtool: 'source-map',
-  module: {
-    loaders: [js, css]
+  mode: 'development',
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.json'],
   },
-  plugins: [html]
+  module: {
+    rules: [
+      {
+        test: /\.png$/,
+        use: {
+          loader: 'file-loader',
+          options: {},
+        },
+      },
+      {
+        test: /\.css?$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.tsx?$/,
+        use: {
+          loader: 'ts-loader',
+          options: {
+            transpileOnly: true,
+            configFile: 'tsconfig.json',
+          },
+        },
+      },
+    ],
+  },
+  plugins: [html],
 };

@@ -1,4 +1,31 @@
-html, body, div, span, p, a, em, img, small, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+html,
+body,
+div,
+span,
+p,
+a,
+em,
+img,
+small,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   border: 0;
   padding: 0;
   margin: 0;
@@ -13,14 +40,11 @@ body {
 a {
   text-decoration: none;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-.game {
-  display: flex;
-  justify-content: center;
-}
-.menu {
-  position: absolute;
+.app--header {
+  text-align: center;
 }

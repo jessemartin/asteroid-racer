@@ -1,0 +1,9 @@
+.game {
+  display: flex;
+  justify-content: center;
+}
+
+.game--canvas {
+  height: 800px;
+  width: 800px;
+}

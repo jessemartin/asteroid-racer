@@ -1,8 +1,11 @@
-![astroid racer](astroid_racer.png)
+# Asteroid Racer
 
+A simple game loop written in React/Redux with Canvas.
+
+## Running
 
 `npm install`
 
-`npm start`
+`npm run start:dev`
 
 [localhost:8080](http://localhost:8080)
