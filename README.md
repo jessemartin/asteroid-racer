@@ -1,5 +1,3 @@
-#Astroid Racer
-
 ![astroid racer](astroid_racer.png)
 
 
